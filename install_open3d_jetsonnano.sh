@@ -2,7 +2,7 @@
 
 git clone https://github.com/isl-org/Open3D
 
-VIRTUAL_ENV=/home/akhilkkjet/VENV/my_env_3
+
 echo $VIRTUAL_ENV
 
 sudo apt-get update -y
