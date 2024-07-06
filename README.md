@@ -38,10 +38,11 @@ Installing Open3D and OpenCV together with cuda support was not worked for me st
 
          virtualenv -p /usr/bin/python3.8 VIRTUAL_ENV/opencv_open3d
 8. Now activate the newly created virtual environment..
-    
-        source VIRTUAL_ENV/opencv_open3d/bin/activate
-9. Open a new terminal  and then create a folder named 'PACKAGES' at home, and Clone this repository to the directory with the following command.
 
+        source VIRTUAL_ENV/opencv_open3d/bin/activate
+10. Create a folder named 'PACKAGES' at home, and Clone this repository to the directory with the following command.
+
+        cd ~
         mkdir PACKAGES
         cd PACKAGES
         git clone git@github.com:asujaykk/Opencv-and-open3D-in-Jetson-nano-with-cuda-support..git
@@ -49,7 +50,9 @@ Installing Open3D and OpenCV together with cuda support was not worked for me st
 
         cd Opencv-and-open3D-in-Jetson-nano-with-cuda-support
         sudo bash 8gb_swap.sh
-12. Run 
+12. Run follwoing command to install Open3D in this virtual environment (take almost 3 to 4 hour to complete).
+
+        bash install_open3d_jetsonnano.sh
 
 
      
