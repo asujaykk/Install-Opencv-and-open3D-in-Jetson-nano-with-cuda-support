@@ -19,27 +19,37 @@ Installing Open3D and OpenCV together with cuda support was not worked for me st
 
        sudo apt-get update
        sudo apt-get upgrade
-4. Clone this repository to your working directory with the following command.
 
-        git clone git@github.com:asujaykk/Opencv-and-open3D-in-Jetson-nano-with-cuda-support..git
-6. Install python3.8.
+3. Install python3.8.
 
         sudo apt-get install python3.8
-7. Install pip3
+4. Install pip3
 
         sudo apt-get install python3-pip
-9. Install virtualenv package.
+5. Install virtualenv package.
 
         pip install virtualenv
 
-11. Create A folder named VIRTUAL_ENV to store all virtual environment.
+6. Create A folder named 'VIRTUAL_ENV' to store all virtual environment.
 
+        cd ~
         mkdir VIRTUAL_ENV
-13. Create a virtual environment with python3.8 as 'opencv_open3d' inside 'VIRTUAL_ENV' folder.
+7. Create a virtual environment with python3.8 as 'opencv_open3d' inside 'VIRTUAL_ENV' folder.
 
          virtualenv -p /usr/bin/python3.8 VIRTUAL_ENV/opencv_open3d
+8. Now activate the newly created virtual environment..
+    
+        source VIRTUAL_ENV/opencv_open3d/bin/activate
+9. Open a new terminal  and then create a folder named 'PACKAGES' at home, and Clone this repository to the directory with the following command.
 
+        mkdir PACKAGES
+        cd PACKAGES
+        git clone git@github.com:asujaykk/Opencv-and-open3D-in-Jetson-nano-with-cuda-support..git
+11. Create a swap space of 8GB (This is really needed while buiilding opencv and open3dfrom source, Otherwise the build may break with out of memory error) by running '8gb_swap.sh' script in this repository.
 
+        cd Opencv-and-open3D-in-Jetson-nano-with-cuda-support
+        sudo bash 8gb_swap.sh
+12. Run 
 
 
      
