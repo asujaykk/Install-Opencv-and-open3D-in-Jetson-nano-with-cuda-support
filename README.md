@@ -16,12 +16,28 @@ Installing Open3D and OpenCV together with cuda support was not worked for me st
 ## Steps to install OpenCv and Open3D
 1. Open terminal in your working directory.
 2. Update the OS with following command.
-              sudo apt-get update
-              sudo apt-get upgrade
+
+       sudo apt-get update
+       sudo apt-get upgrade
 4. Clone this repository to your working directory with the following command.
-              git clone git@github.com:asujaykk/Opencv-and-open3D-in-Jetson-nano-with-cuda-support..git
-6. Install basic packages required with following commands.
-   
+
+        git clone git@github.com:asujaykk/Opencv-and-open3D-in-Jetson-nano-with-cuda-support..git
+6. Install python3.8.
+
+        sudo apt-get install python3.8
+7. Install pip3
+
+        sudo apt-get install python3-pip
+9. Install virtualenv package.
+
+        pip install virtualenv
+
+11. Create A folder named VIRTUAL_ENV to store all virtual environment.
+
+        mkdir VIRTUAL_ENV
+13. Create a virtual environment with python3.8 as 'opencv_open3d' inside 'VIRTUAL_ENV' folder.
+
+         virtualenv -p /usr/bin/python3.8 VIRTUAL_ENV/opencv_open3d
 
 
 
