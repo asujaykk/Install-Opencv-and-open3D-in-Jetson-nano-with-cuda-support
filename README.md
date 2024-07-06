@@ -22,41 +22,44 @@ Installing Open3D and OpenCV together with cuda support was not worked for me st
 
 3. Install python3.8.
 
-        sudo apt-get install python3.8
-4. Install pip3
+       sudo apt-get install python3.8
+5. Set default python3 as python 3.8.
+
+       sudo update-alternatives --install /usr/bin/python3 python3 /usr/bin/python3.8 1
+6. Install pip3
 
         sudo apt-get install python3-pip
-5. Install virtualenv package.
+7. Install virtualenv package.
 
-        pip install virtualenv
+        sudo pip3 install virtualenv
 
-6. Create A folder named 'VIRTUAL_ENV' to store all virtual environment.
+8. Create A folder named 'VIRTUAL_ENV' to store all virtual environment.
 
         cd ~
         mkdir VIRTUAL_ENV
-7. Create a virtual environment with python3.8 as 'opencv_open3d' inside 'VIRTUAL_ENV' folder.
+9. Create a virtual environment with python3.8 as 'opencv_open3d' inside 'VIRTUAL_ENV' folder.
 
          virtualenv -p /usr/bin/python3.8 VIRTUAL_ENV/opencv_open3d
-8. Now activate the newly created virtual environment..
+10. Now activate the newly created virtual environment..
 
         source VIRTUAL_ENV/opencv_open3d/bin/activate
-10. Create a folder named 'PACKAGES' at home, and Clone this repository to the directory with the following command.
+11. Create a folder named 'PACKAGES' at home, and Clone this repository to the directory with the following command.
 
         cd ~
         mkdir PACKAGES
         cd PACKAGES
-        git clone git@github.com:asujaykk/Opencv-and-open3D-in-Jetson-nano-with-cuda-support..git
-11. Create a swap space of 8GB (This is really needed while buiilding opencv and open3dfrom source, Otherwise the build may break with out of memory error) by running '8gb_swap.sh' script in this repository.
+        git clone https://github.com/asujaykk/Opencv-and-open3D-in-Jetson-nano-with-cuda-support..git
+12. Create a swap space of 8GB (This is really needed while buiilding opencv and open3dfrom source, Otherwise the build may break with out of memory error) by running '8gb_swap.sh' script in this repository.
 
         cd Opencv-and-open3D-in-Jetson-nano-with-cuda-support
         sudo bash 8gb_swap.sh
-12. remove existing old cmake and Install cmake version greater than 3.20.0
+13. remove existing old cmake and Install cmake version greater than 3.20.0
 
         sudo apt remove --purge cmake
         sudo snap install cmake --classic
 14. Run follwoing command to install Open3D in this virtual environment (take almost 3 to 4 hour to complete).
 
-        export VIRTUAL_ENV=~/VIRTUAL_ENV/opencv_open3d/bin/activate
+        export VIRTUAL_ENV=~/VIRTUAL_ENV/opencv_open3d
         bash install_open3d_jetsonnano.sh
 
 
