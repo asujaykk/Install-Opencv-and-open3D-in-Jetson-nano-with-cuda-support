@@ -50,8 +50,13 @@ Installing Open3D and OpenCV together with cuda support was not worked for me st
 
         cd Opencv-and-open3D-in-Jetson-nano-with-cuda-support
         sudo bash 8gb_swap.sh
-12. Run follwoing command to install Open3D in this virtual environment (take almost 3 to 4 hour to complete).
+12. remove existing old cmake and Install cmake version greater than 3.20.0
 
+        sudo apt remove --purge cmake
+        sudo snap install cmake --classic
+14. Run follwoing command to install Open3D in this virtual environment (take almost 3 to 4 hour to complete).
+
+        export VIRTUAL_ENV=~/VIRTUAL_ENV/opencv_open3d/bin/activate
         bash install_open3d_jetsonnano.sh
 
 
