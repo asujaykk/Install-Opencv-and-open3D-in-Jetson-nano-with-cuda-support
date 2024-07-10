@@ -17,11 +17,11 @@ Installing Open3D and OpenCV together with cuda support was not worked for me st
 1. Open terminal in your working directory.
 2. Clone this repository to home directory.
 
-       git clone https://github.com/asujaykk/Opencv-and-open3D-in-Jetson-nano-with-cuda-support..git
+       git clone https://github.com/asujaykk/Opencv-and-open3D-in-Jetson-nano-with-cuda-support.git
 
 3. Create 8GB swap memory for building pencv and open3d from source by running the '8gb_swap.sh' script.
 
-       cd Opencv-and-open3D-in-Jetson-nano-with-cuda-support.
+       cd Opencv-and-open3D-in-Jetson-nano-with-cuda-support
        sudo bash 8gb_swap.sh
 4. Install virtualenv.
 
@@ -45,7 +45,7 @@ Installing Open3D and OpenCV together with cuda support was not worked for me st
 9. Install OpenCV with the script from the cloned folder.
 
         cd ~
-        cd Opencv-and-open3D-in-Jetson-nano-with-cuda-support.
+        cd Opencv-and-open3D-in-Jetson-nano-with-cuda-support
         bash install_opencv4.5.0_Jetson.sh
         
 10. Remove existing old cmake and Install cmake version greater than 3.20.0
