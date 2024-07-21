@@ -46,19 +46,20 @@ Installing Open3D and OpenCV together with cuda support was not worked for me st
    
         cd ~
         source V_ENV/my_env/bin/activate
-9. Remove existing old cmake and Install cmake version greater than 3.20.0
-
-        sudo apt remove --purge cmake
-        hash -r
-        sudo snap install cmake --classic
-10. Install OpenCV with the script from the cloned folder.
+   
+10. Install OpenCV version 4.0.0 with the script from the cloned folder.
 
         cd ~
         cd Opencv-and-open3D-in-Jetson-nano-with-cuda-support
         bash install_opencv4.0.0_Jetson.sh
-        
+    
+12. Remove existing old cmake and Install cmake version greater than 3.20.0
 
-11. Install open3d with the script 'install_open3d_jetsonnano.sh' .
+        sudo apt remove --purge cmake
+        hash -r
+        sudo snap install cmake --classic
+        
+13. Install open3d version 0.18.0 with the script 'install_open3d_jetsonnano.sh' .
     
         bash  install_open3d_jetsonnano.sh
 
