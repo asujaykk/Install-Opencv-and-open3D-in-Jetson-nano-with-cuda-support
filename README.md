@@ -1,8 +1,9 @@
 # Install Opencv-and-open3D-in-Jetson-nano-with-cuda-support.
 Basically here im explaining how to install opencv and open3d in jetson nano b01 developement board with cuda supprt.
 The version of OpenCV and Open3D is as follows. 
-   1. OpenCV: 4.0.0
-   2. Open3D: 0.18.0
+   1. Python: 3.8.0 
+   2. OpenCV: 4.0.0
+   3. Open3D: 0.18.0
 
 Jetson nano is by default comes with prebuild opencv which support both gstreamer and cuda. but no support available for open3D.
 Open3D is also a usefull computer vision library for many 3D visualization task with OpenCV.
