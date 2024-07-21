@@ -3,6 +3,7 @@ Basically here im explaining how to install opencv and open3d in jetson nano b01
 The version of OpenCV and Open3D is as follows. 
    1. OpenCV: 4.0.0
    2. Open3D: 0.18.0
+
 Jetson nano is by default comes with prebuild opencv which support both gstreamer and cuda. but no support available for open3D.
 Open3D is also a usefull computer vision library for many 3D visualization task with OpenCV.
 
@@ -49,7 +50,7 @@ Installing Open3D and OpenCV together with cuda support was not worked for me st
 
         cd ~
         cd Opencv-and-open3D-in-Jetson-nano-with-cuda-support
-        bash install_opencv4.5.0_Jetson.sh
+        bash install_opencv4.0.0_Jetson.sh
         
 10. Remove existing old cmake and Install cmake version greater than 3.20.0
 
