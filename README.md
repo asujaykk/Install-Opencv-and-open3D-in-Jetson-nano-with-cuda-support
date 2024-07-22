@@ -35,11 +35,7 @@ Installing Open3D and OpenCV together with cuda support was not worked for me st
 5. Install python 3.8.
 
        sudo apt install python3.8
-6. Create A folder named 'V_ENV' to store all virtual environment.
-
-        cd ~
-        mkdir V_ENV
-7. Install dependancies (This should be created before creating virtual environment for properly installing opencv to virtual environment)
+6. Install dependancies (This should be created before creating virtual environment for properly installing opencv to virtual environment)
 
        sudo apt-get update
        sudo apt-get install -y build-essential cmake git libgtk3.0-dev libgtk2.0-dev pkg-config libavcodec-dev libavformat-dev libswscale-dev
@@ -48,29 +44,33 @@ Installing Open3D and OpenCV together with cuda support was not worked for me st
        sudo apt-get install -y libtbb2 libtbb-dev libjpeg-dev libpng-dev libtiff-dev libdc1394-22-dev
        sudo apt-get install -y libv4l-dev v4l-utils qv4l2 v4l2ucp
        sudo apt-get install -y curl
-9. Create a virtual environment with python3.8 as 'opencv_open3d' inside 'V_ENV' folder.
+7.  Create A folder named 'V_ENV' to store all virtual environment.
+
+        cd ~
+        mkdir V_ENV
+8. Create a virtual environment with python3.8 as 'opencv_open3d' inside 'V_ENV' folder.
 
          cd ~
          virtualenv -p python3.8 V_ENV/my_env
-10. Now activate the newly created virtual environment..
+9. Now activate the newly created virtual environment..
    
         cd ~
         source V_ENV/my_env/bin/activate
    
-11. Install OpenCV version 4.0.0 with the script from the cloned folder.
+10. Install OpenCV version 4.0.0 with the script from the cloned folder.
     Close all other applications while installing (otherwise build may break due to out of memory error)
 
         cd ~
         cd Opencv-and-open3D-in-Jetson-nano-with-cuda-support
         bash install_opencv4.0.0_Jetson.sh
     
-12. Remove existing old cmake and Install cmake version greater than 3.20.0
+11. Remove existing old cmake and Install cmake version greater than 3.20.0
 
         sudo apt remove --purge cmake
         hash -r
         sudo snap install cmake --classic
         
-13. Install open3d version 0.18.0 with the script 'install_open3d_jetsonnano.sh'.
+12. Install open3d version 0.18.0 with the script 'install_open3d_jetsonnano.sh'.
     Close all other applications while installing (otherwise build may break due to out of memory error)
     
         bash  install_open3d_jetsonnano.sh
