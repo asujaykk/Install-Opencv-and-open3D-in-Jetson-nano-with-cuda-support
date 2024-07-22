@@ -39,16 +39,25 @@ Installing Open3D and OpenCV together with cuda support was not worked for me st
 
         cd ~
         mkdir V_ENV
-7. Create a virtual environment with python3.8 as 'opencv_open3d' inside 'V_ENV' folder.
+7. Install dependancies.
+
+       sudo apt-get update
+       sudo apt-get install -y build-essential cmake git libgtk2.0-dev pkg-config libavcodec-dev libavformat-dev libswscale-dev
+       sudo apt-get install -y libgstreamer1.0-dev libgstreamer-plugins-base1.0-dev
+       sudo apt-get install -y python2.7-dev python3.8-dev python-dev python-numpy python3-numpy
+       sudo apt-get install -y libtbb2 libtbb-dev libjpeg-dev libpng-dev libtiff-dev libdc1394-22-dev
+       sudo apt-get install -y libv4l-dev v4l-utils qv4l2 v4l2ucp
+       sudo apt-get install -y curl
+9. Create a virtual environment with python3.8 as 'opencv_open3d' inside 'V_ENV' folder.
 
          cd ~
          virtualenv -p python3.8 V_ENV/my_env
-8. Now activate the newly created virtual environment..
+10. Now activate the newly created virtual environment..
    
         cd ~
         source V_ENV/my_env/bin/activate
    
-10. Install OpenCV version 4.0.0 with the script from the cloned folder.
+11. Install OpenCV version 4.0.0 with the script from the cloned folder.
     Close all other applications while installing (otherwise build may break due to out of memory error)
 
         cd ~
