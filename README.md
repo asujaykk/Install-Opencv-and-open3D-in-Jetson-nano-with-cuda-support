@@ -39,7 +39,7 @@ Installing Open3D and OpenCV together with cuda support was not worked for me st
 
         cd ~
         mkdir V_ENV
-7. Install dependancies.
+7. Install dependancies (This should be created before creating virtual environment for properly installing opencv to virtual environment)
 
        sudo apt-get update
        sudo apt-get install -y build-essential cmake git libgtk2.0-dev pkg-config libavcodec-dev libavformat-dev libswscale-dev
