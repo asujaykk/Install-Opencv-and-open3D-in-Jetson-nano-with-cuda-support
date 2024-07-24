@@ -89,6 +89,7 @@ The heat map visualized with open3D.
     
 
 
+![vokoscreen-2024-07-24_23-28-33](https://github.com/user-attachments/assets/1158fa21-d426-4d2c-b130-72b4352ad1f2)
 
 
 
