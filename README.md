@@ -87,7 +87,9 @@ The heat map image visualized by opencv
 ![Screenshot from 2024-07-24 23-12-54](https://github.com/user-attachments/assets/78e6c7e5-235d-4597-9a03-3cbdb7f7f38f)
 The heat map visualized with open3D.
     
-![Uploading vokoscreen-2024-07-24_23-20-47.gif…]()
+
+
+
 
 
      
