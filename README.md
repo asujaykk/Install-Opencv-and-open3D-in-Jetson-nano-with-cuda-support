@@ -91,6 +91,10 @@ The heat map visualized with open3D.
 
 ![vokoscreen-2024-07-24_23-28-33](https://github.com/user-attachments/assets/1158fa21-d426-4d2c-b130-72b4352ad1f2)
 
+References:
+1. Open3D : https://github.com/isl-org/Open3D
+2. opencv installation script  : https://github.com/AastaNV/JEP/tree/eb1afabb256a9a9bf9c4790c5ed1a300e993f9ae/script
+
 
 
      
