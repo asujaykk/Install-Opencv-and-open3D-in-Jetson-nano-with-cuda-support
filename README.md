@@ -1,4 +1,4 @@
-# Install Opencv-and-open3D-in-Jetson-nano-with-cuda-support.
+![Screenshot from 2024-07-24 23-12-54](https://github.com/user-attachments/assets/68ac07f4-2806-4b74-a605-e04d6de7eade)# Install Opencv-and-open3D-in-Jetson-nano-with-cuda-support.
 Basically here im explaining how to install opencv and open3d in jetson nano b01 developement board with cuda supprt and Gstreamer support.
 The version of OpenCV and Open3D is as follows. 
    1. Python: 3.8.0 
@@ -74,7 +74,21 @@ Installing Open3D and OpenCV together with cuda support was not worked for me st
     Close all other applications while installing (otherwise build may break due to out of memory error)
     
         bash  install_open3d_jetsonnano.sh
+13. Run 'open3d_test_real_render.py' python script available in the folder to verify whether Open3D and OpenCV working.
+    First a heat map image shows up and then a 3D visualization of the same heatmap appear.
 
-        
+        cd ~
+        source V_ENV/opencv_open3d/bin/activate
+        cd Install-Opencv-and-open3D-in-Jetson-nano-with-cuda-support
+        python3 open3d_test_real_render.py
+    
+     The heat map image visualized by opencv
+    
+        ![Screenshot from 2024-07-24 23-12-54](https://github.com/user-attachments/assets/78e6c7e5-235d-4597-9a03-3cbdb7f7f38f)
+     The heat map visualized with open3D.
+    
+    ![Uploading vokoscreen-2024-07-24_23-20-47.gif…]()
+
+
      
  
