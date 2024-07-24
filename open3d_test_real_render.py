@@ -63,7 +63,7 @@ import time
 
 vis = o3d.visualization.Visualizer()
 vis.create_window(
-    window_name='Carla Lidar',
+    window_name='3D visualization',
     width=960,
     height=540,
     left=480,
