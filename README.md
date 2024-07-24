@@ -75,7 +75,7 @@ Installing Open3D and OpenCV together with cuda support was not worked for me st
     
         bash  install_open3d_jetsonnano.sh
 13. Run 'open3d_test_real_render.py' python script available in the folder to verify whether Open3D and OpenCV working.
-    First a heat map image shows up and then a 3D visualization of the same heatmap appear.
+   Once you run the script,  then first a heat map image shows up and then a 3D visualization of the same heatmap appear as given below.
 
         cd ~
         source V_ENV/opencv_open3d/bin/activate
