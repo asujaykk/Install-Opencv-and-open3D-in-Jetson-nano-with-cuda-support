@@ -64,17 +64,28 @@ Installing Open3D and OpenCV together with cuda support was not worked for me st
         cd Install-Opencv-and-open3D-in-Jetson-nano-with-cuda-support
         bash install_opencv4.0.0_Jetson.sh
     
-11. Remove existing old cmake and Install cmake version greater than 3.20.0
+11. Open a new terminal and Remove existing old cmake and Install cmake version  3.29.8
 
         sudo apt remove --purge cmake
         hash -r
-        sudo snap install cmake --classic
+        sudo apt-get install libssl-dev
+        wget https://github.com/Kitware/CMake/releases/download/v3.29.8/cmake-3.29.8.tar.gz
+        tar -zxvf cmake-3.29.8.tar.gz
+        cd cmake-3.29.8
+        ./bootstrap
+        make -j4
+        sudo make install
         
-12. Install open3d version 0.18.0 with the script 'install_open3d_jetsonnano.sh'.
+        
+13. Install open3d version 0.18.0 with the script 'install_open3d_jetsonnano.sh'.
     Close all other applications while installing (otherwise build may break due to out of memory error)
-    
+
+        cd ~
+        source V_ENV/opencv_open3d/bin/activate
+        cd Install-Opencv-and-open3D-in-Jetson-nano-with-cuda-support
         bash  install_open3d_jetsonnano.sh
-13. Run 'open3d_test_real_render.py' python script available in the folder to verify whether Open3D and OpenCV working.
+    
+15. Run 'open3d_test_real_render.py' python script available in the folder to verify whether Open3D and OpenCV working.
    Once you run the script,  then first a heat map image shows up and then a 3D visualization of the same heatmap appear as given below.
 
         cd ~
